@@ -101,6 +101,13 @@
       "env": {
         "browser": true
       }
+    },
+    {
+      "files": ["vitest.d.ts"],
+      "rules": {
+        "typescript/no-empty-interface": "allow",
+        "typescript/no-empty-object-type": "allow"
+      }
     }
   ]
 }
