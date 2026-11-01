@@ -88,13 +88,7 @@
   },
   "overrides": [
     {
-      "files": ["packages/validator/modules/*"],
-      "rules": {
-        "no-unused-vars": "allow"
-      }
-    },
-    {
-      "files": ["packages/cli/main.ts"],
+      "files": ["backend/src/db/seeder.ts", "backend/src/platforms/node.ts"],
       "rules": {
         "no-console": "allow"
       },
@@ -103,14 +97,7 @@
       }
     },
     {
-      "files": ["packages/inferencer/mk-codegen.ts"],
-      "rules": {
-        "no-inline-comments": "allow",
-        "capitalized-comments": "allow"
-      }
-    },
-    {
-      "files": ["packages/playground/**/*"],
+      "files": ["frontend/src/**/*"],
       "env": {
         "browser": true
       }
