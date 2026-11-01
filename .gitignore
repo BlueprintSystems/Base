@@ -1,1 +1,4 @@
+# Installed JS packages
 node_modules/
+# Vitest coverage report
+coverage/
