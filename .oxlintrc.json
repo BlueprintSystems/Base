@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["typescript", "unicorn", "oxc", "vitest", "promise", "node"],
+  "plugins": ["typescript", "unicorn", "oxc", "node"],
   "ignorePatterns": ["**/codegen/**"],
   "options": {
     "reportUnusedDisableDirectives": "warn",
@@ -91,7 +91,8 @@
     {
       "files": ["backend/src/db/seeder.ts", "backend/src/platforms/node.ts"],
       "rules": {
-        "no-console": "allow"
+        "no-console": "allow",
+        "node/no-top-level-await": "allow"
       },
       "env": {
         "node": true
@@ -107,7 +108,16 @@
       "files": ["vitest.d.ts"],
       "rules": {
         "typescript/no-empty-interface": "allow",
-        "typescript/no-empty-object-type": "allow"
+        "typescript/no-empty-object-type": "allow",
+        "typescript/consistent-type-definitions": "allow"
+      }
+    },
+    {
+      "files": ["*.test.*"],
+      "plugins": ["typescript", "unicorn", "oxc", "vitest", "promise"],
+      "rules": {
+        "vitest/require-test-timeout": "allow",
+        "vitest/no-importing-vitest-globals": "allow"
       }
     }
   ]
