@@ -3,16 +3,18 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "drizzle:generate": "drizzle-kit generate",
+    "drizzle:migrate": "drizzle-kit migrate",
     "seed": "node src/db/seeder.ts",
     "start": "node src/index.ts"
   },
   "dependencies": {
     "@hono/node-server": "^2.1.5",
-    "drizzle-orm": "^0.45.4",
+    "drizzle-orm": "^1.0.0-rc.5",
     "hono": "^4.13.14"
   },
   "devDependencies": {
     "@types/node": "^26.6.6",
-    "drizzle-kit": "^0.31.11"
+    "drizzle-kit": "^1.0.0-rc.5"
   }
 }
