@@ -1,5 +1,5 @@
 {
-  "extends": "../tsconfig.json",
+  "extends": "../tsconfig.base.json",
   "compilerOptions": {
     "lib": ["DOM", "DOM.AsyncIterable", "ESNext"],
     "jsx": "react-jsx",
@@ -11,5 +11,5 @@
       "react-dom/*": ["./node_modules/preact/compat/*"]
     }
   },
-  "include": ["**/*.{ts,tsx}"]
+  "include": ["**/*.ts", "**/*.tsx"]
 }
