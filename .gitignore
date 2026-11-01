@@ -2,3 +2,5 @@
 node_modules/
 # Vitest coverage report
 coverage/
+# Agent skills
+.agents/skills/
